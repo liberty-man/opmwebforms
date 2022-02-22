@@ -1,0 +1,70 @@
+body {
+  background-color: #15428C;
+  font-family: sans-serif;
+}
+
+section {
+  border-radius: 150px;
+  background-color: white;
+  opacity: 0.6;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section form {
+  opacity: 1.0;
+}
+
+section h1 {
+  color: #15428C;
+  text-align: center;
+  opacity: 1.0;
+  padding: 0 0 0 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px #15428C solid;
+  font-size: 1.5em;
+  color: black;
+}
+
+select {
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px #15428C solid;
+  font-size: 1.5em;
+  color: black;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #15428C;
+}
+
+fieldset {
+  padding: 0 0 0 0;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.center {
+  margin: auto;
+}

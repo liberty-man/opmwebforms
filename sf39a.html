@@ -6,23 +6,68 @@
     <body>
         <form action="#">
             <fieldset>
-                <legend>I. AGENCY REQUEST</legend>
-                <label for="I1">1. Name of issuing official</label>
-                <input type="text" id="I1" name="I1">
-                <label for="I2">2. Certificate of Eligibles control number</label>
-                <input type="text" id="I2" name="I2">
-                <label for="I3">3. Date issued (mm/dd/yyyy)</label>
-                <input type="date" id="I3" name="I3">
-                <label for="I4">4. Department or agency name</label>
-                <input type="text" id="I4" name="I4">
-                <label for="I5">5. Department or agency organization code</label>
-                <input type="text" id="I5" name="I5">
-                <label for="I6">6. Bureau or field office</label>
-                <input type="text" id="I6" name="I6">
-                <label for="I7">7. Agency request number </label>
-                <input type="text" id="I7" name="I7">
-                <label for="I8">8. Date of request (mm/dd/yyyy)</label>
-                <input type="date" id="I8" name="I8">
+                <legend>Request and Justification for Selective Factors and Quality Ranking Factors
+                    (Attach to SF 39)</legend>
+                <label for="dept">1. Department or agency name</label>
+                <input type="text" id="dept" name="dept">
+                <label for="ctrlnum">2. Certificate of Eligibles control number</label>
+                <input type="text" id="ctrlnum" name="ctrlnum">
+                <label for="dateissued">3. Date issued (mm/dd/yyyy)</label>
+                <input type="date" id="dateissued" name="dateissued">
+                <label for="reqnum">4. Agency request number</label>
+                <input type="text" id="reqnum" name="reqnum">
+                <label for="datereq">5. Date of request (mm/dd/yyyy)</label>
+                <input type="date" id="datereq" name="datereq">
+                <label for="posn">6. Title, series, and grade/salary (if ungraded) of vacancy</label>
+                <textarea id="posn" name="posn" rows="15" columns="15"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>I. Selective Factors</legend>
+                <label for="I1">1. The following special or additional competencies or special qualifications are needed for this position.</label>
+                <textarea id="I1" name="I1" rows="15" columns="15"></textarea>
+                <label for="I2">2. Indicate competencies or special qualifications without which the applicant could not perform the duties of the position. Provide a clear description or specific reference to a task in the position description.</label>
+                <textarea id="I2" name="I2" rows="15" columns="15"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>II. Quality Ranking Factors</legend>
+                <label for="II1">1. The following special or additional competencies or special qualifications are needed for this position.</label>
+                <textarea id="II1" name="II1" rows="15" columns="15"></textarea>
+                <label for="II2">2. Indicate competencies or special qualifications without which the applicant could not perform the duties of the position. Provide a clear description or specific reference to a task in the position description.</label>
+                <textarea id="II2" name="II2" rows="15" columns="15"></textarea>
+                <label for="II3">3. Additional agency remarks:</label>
+                <textarea id="II3" name="II3" rows="15" columns="15"></textarea>
+                <!--Signature-->
+                <label for="II5">5. Title of appointing official </label>
+                <input type="text" id="II5" name="II5">
+                <label for="II6">6. Date (mm/dd/yyyy) </label>
+                <input type="date" id="II6" name="II6">
+                <label for="deotext">For Delegated Examining Office:</label>
+                <textarea id="deotext" name="deotext" rows="15" columns="15"></textarea>
+                <!--Signature-->
+                <label for="deocontact">2. Title of appointing official </label>
+                <input type="text" id="deocontact" name="deocontact">
+                <label for="deodate">3. Date (mm/dd/yyyy) </label>
+                <input type="date" id="deodate" name="deodate">
+            </fieldset>
+                
+                
+
+
+
+4. Signature of appointing official 
+
+6. Date (mm/dd/yyyy)
+
+1. Signature of appointing official 
+2. Title of appointing official
+3. Date (mm/dd/yyyy)
+
+            </fieldset>
+
+
+
+
+
                 <label for="I9">9. Identify appropriate delegated examining office and address</label>
                 <textarea id="I9" name="I9" rows="5" columns="15"></textarea>
                 <label for="I10a">10a. Number of vacancies</label>
@@ -55,8 +100,7 @@
                 <label for="no">
                     <input type="checkbox" id="no" name="14. CTAP/ICTAP cleared">No
                 </label>
-                <label for="I15">15. Other conditions of employment (e.g., shift or seasonal work, medical exam, etc.)</label>
-                <textarea id="I15" name="I15" rows="15" columns="15"></textarea>
+                
                 <label>16. Reemployment priority list cleared</label>
                 <label for="yes">
                     <input type="checkbox" id="yes" name="15. Reemployment priority list cleared">Yes
@@ -121,7 +165,6 @@
                 <legend>  III. REPORT </legend>
                 <label for="IIIa">To issuing office:  If Certificate of Eligibles is returned unused, please explain why:</label>
                 <textarea id="IIIa" name="IIIa" rows="5" columns="15"></textarea>
-                <!--Signature of appointing official-->
                 <label for="IIIc">Name and title of appointing official</label>
                 <input type="text" id="IIIc"" name="IIIc">
                 <label for="IIId">Date signed (mm/dd/yyyy)</label>

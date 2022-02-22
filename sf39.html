@@ -2,14 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <style>
-
-        </style>
     </head>
     <body>
         <form action="#">
             <fieldset>
-                <legend>I: Agency Request</legend>
+                <legend>I. AGENCY REQUEST</legend>
                 <label for="I1">1. Name of issuing official</label>
                 <input type="text" id="I1" name="I1">
                 <label for="I2">2. Certificate of Eligibles control number</label>
@@ -94,14 +91,41 @@
                 </label>
                 <label for="I20">20.  Remarks.  Provide any special qualification requirements (e.g., selective factors).</label>
                 <textarea id="I20" name="I9" rows="5" columns="15"></textarea>
-                <!--
-                21.  Address where Certificate of Eligibles is to be sent:
-                22a. Contact name
-                22b. Contact telephone number
-                22c. Contact fax number
-                22d. Contact e-mail address-->
+                <label for="I21">21.  Address where Certificate of Eligibles is to be sent:</label>
+                <textarea id="I21" name="I21" rows="15" columns="15"></textarea>
+                <label for="I22a">22a. Contact name</label>
+                <input type="text" id="I22a" name="I22a">
+                <label for="I22b">22b. Contact telephone number</label>
+                <input type="phone" id="I22b" name="I22b">
+                <label for="I22c">22c. Contact fax number</label>
+                <input type="phone" id="I22c" name="I22c">
+                <label for="I22d">22d. Contact e-mail address</label>
+                <input type="email" id="I22d" name="I22d">
             </fieldset>
-
+            <fieldset>
+                <legend>II. CERTIFICATION of ELIGIBLES  (To Be Completed by DE Office)</legend>
+                <label>Delegated examining office:</label>  
+                <label for="certattached">
+                    <input type="checkbox" id="certattached" name="certattached">The attached Certificate of Eligibles is provided in response to the above request. 
+                </label>
+                <label for="certvalid">
+                    <input type="checkbox" id="certvalid" name="certvalid">This Certificate of Eligibles is valid only for the position(s), grade(s), and duty location(s) shown above.
+                </label>
+                <label for="certreturned">
+                    <input type="checkbox" id="certreturned" name="certreturned">This Certificate of Eligibles must be returned by <input type="date" id="certreturndate" name="certreturndate">according to agency policy. 
+                </label>
+                <label for="sf39contact">For information concerning this Certificate of Eligibles contact:</label>
+                <input type="text" id="sf39contact" name="sf39contact">
+            </fieldset>
+            <fieldset>
+                <legend>  III. REPORT </legend>
+                <label for="IIIa">To issuing office:  If Certificate of Eligibles is returned unused, please explain why:</label>
+                <textarea id="IIIa" name="IIIa" rows="5" columns="15"></textarea>
+                <label for="IIIc">Name and title of appointing official</label>
+                <input type="text" id="IIIc"" name="IIIc">
+                <label for="IIId">Date signed (mm/dd/yyyy)</label>
+                <input type="date" id="IIId"" name="IIId">
+            </fieldset>
         </form>
 </body>
 </html>

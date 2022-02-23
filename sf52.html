@@ -65,13 +65,13 @@
                   <label for="B7B">7. Position Number</label>
                   <input type="text" id="B7B" name="B7B">
                   <label for="B8">8. Pay Plan</label>
-                  <input type="text" id="B8" name="B8">
+                  <select id="B8" name="B8"></select>
                   <label for="B9">9. Occupational Series</label>
-                  <input type="text" id="B9" name="B9">
+                  <select id="B9" name="B9"></select>
                   <label for="B10">10. Grade/Level</label>
-                  <input type="text" id="B10" name="B10">
+                  <select id="B10" name="B10"></select>
                   <label for="B11">11. Step/Rate</label>
-                  <input type="text" id="B11" name="B11">
+                  <select id="B11" name="B11""></select>
                   <label for="B12">12. Total Salary</label>
                   <input type="number" id="B12" name="B12">
                   <label for="B12a">12A. Basic Pay:</label>
@@ -84,6 +84,7 @@
                   <input type="number" id="B12d" name="B12d">
                   <label for="B13">13. Pay Basis</label>
                   <input type="text" id="B13" name="B13">
+                  <select id="B35" name="B35"></select>
                   <label for="B14">14. Name and Location of Position's Organization</label>
                   <textarea id="B14" name="B14" rows="5" cols="50"></textarea>
             </fieldset>
@@ -94,13 +95,13 @@
                   <label for="B15B">15. Position Number</label>
                   <input type="text" id="B15B" name="B15B">
                   <label for="B16">16. Pay Plan</label>
-                  <input type="text" id="B16" name="B16">
+                  <select id="B16" name="B16"></select>
                   <label for="B17">17. Occupational Series</label>
-                  <input type="text" id="B17" name="B17">
+                  <select id="B17" name="B17"</select>
                   <label for="B18">18. Grade/Level</label>
-                  <input type="text" id="B18" name="B18">
+                  <select id="B18" name="B18"></select>
                   <label for="B19">19. Step/Rate</label>
-                  <input type="text" id="B19" name="B19">
+                  <select id="B19" name="B19"></select> 
                   <label for="B20">20. Total Salary</label>
                   <input type="number" id="B20" name="B20">
                   <label for="B20a">20A. Basic Pay:</label>
@@ -112,33 +113,19 @@
                   <label for="B20d">20D. Other Pay</label>
                   <input type="number" id="B20d" name="B20d">
                   <label for="B21">21. Pay Basis</label>
-                  <input type="text" id="B21" name="B21">
+                  <select id="B21" name="B21"></select>
                   <label for="B22">22. Name and Location of Position's Organization</label>
                   <textarea id="B22" name="B22" rows="5" cols="50"></textarea>
             </fieldset>
             <fieldset>
                   <legend>EMPLOYEE DATA</legend>
                   <label for="B23">23. Veterans Preference</label>
-                  <select id="B23" name="B23">
-                        <option value="1">1-None</option>
-                        <option value="2">2-5 Point</option>
-                        <option value="3">3-10 Point/Disability</option>
-                        <option value="4">4-10 Point/Compensable</option>
-                        <option value="5">5-10 Point/Other</option>
-                        <option value="6">6-10 Point/Compensable/30%</option>
-                  </select>
+                  <select id="B23" name="B23"></select>
                   <label for="B24">24. Tenure</label>
-                  <select id="B24" name="B24">
-                        <option value="0">0-None</option>
-                        <option value="1">1-Permanent</option>
-                        <option value="2">2-Conditional</option>
-                        <option value="3">3-Indefinite</option>
-                  </select>
+                  <select id="B24" name="B24"></select>
+                  <!--B25-->
                   <label for="B26">26. Veterans Preference for RIF</label>
-                  <select id="B26" name="B26">
-                        <option value="Y">Yes</option>
-                        <option value="N">No</option>
-                  </select>
+                  <select id="B26" name="B26"></select>
                   <label for="B27">27. FEGLI</label>
                   <select id="B27" name="B27"></select>
                   <label for="B28">28. Annuitant Indicator</label>
@@ -210,11 +197,28 @@
                   <!--C1Foffice Signature/Initials-->
                   <input type="date" id="C1Fdate" name="C1Fdate">
             </fieldset>
-
-                  <!--PART D-->
-                  
-                  <!--PART E-->
-
-                  <!--PART F-->
+            <fieldset>
+                  <legend>PART D: Remarks by Requesting Office</legend>
+                  <textarea id="D" name="D" rows="5" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                  <legend>PART E: Employee Resignation/Retirement</legend>
+                  <label for="E1">Reasons for Resignation/Retirement</label>
+                  <textarea id="E1" name="E1" rows="5" cols="50"></textarea>
+                  <label for="E2">Effective Date</label>
+                  <input type="date" id="E2" name="E2">
+                  <!--E3-->
+                  <label for="E4">Date Signed</label>
+                  <input type="date" id="E4" name="E4">
+                  <label for="E5">Forwarding Address</label>
+                  <textarea id="E5" name="E5" rows="5" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                  <legend>PART F: Remarks</legend>
+                  <textarea id="F" name="F" rows="5" cols="50"></textarea>
+            </fieldset>
+      </form>
+</body>
+</html>
        
 

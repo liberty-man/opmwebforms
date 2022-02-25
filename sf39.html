@@ -36,60 +36,26 @@
                 <input type="text" id="I10d" name="I10d">
                 <label for="I10e">10e. Duty location</label>
                 <input type="text" id="I10e" name="I10e">
-                <label for="careerconditional">
-                    <input type="checkbox" id="careerconditional" name="11. Type of Appointment">Career-Contional
-                </label>
-                <label for="temp">
-                    <input type="checkbox" id="temp" name="11. Type of Appointment">Temporary NTE:<input type="date" id="tempNTEdate">
-                </label>
-                <label for="term">
-                    <input type="checkbox" id="term" name="11. Type of Appointment">Term NTE:<input type="date" id="termNTEdate">
-                </label>
+                <label>11. Position Type</label>
+                <p><label for="careerconditional"><input type="checkbox" id="careerconditional" name="11. Type of Appointment">Career-Contional</label></p>
+                <p><label for="temp"><input type="checkbox" id="temp" name="11. Type of Appointment">Temporary NTE:<input type="date" id="tempNTEdate"></label></p>
+                <p><label for="term"><input type="checkbox" id="term" name="11. Type of Appointment">Term NTE:<input type="date" id="termNTEdate"></label></p>
                 <label for="I12">12. Full performance level<i>(Potential)</i></label>
                 <input type="text" id="I12" name="I12">
                 <label for="I13">13. Date SF 52 or request initiated</label>
                 <input type="date" id="I13" name="I13">
-                <label>14. CTAP/ICTAP cleared</label>
-                <label for="yes">
-                    <input type="checkbox" id="yes" name="14. CTAP/ICTAP cleared">Yes
-                </label>
-                <label for="no">
-                    <input type="checkbox" id="no" name="14. CTAP/ICTAP cleared">No
-                </label>
+                <label for="I14">14. CTAP/ICTAP cleared<</label>
+                <select id="I14" name="I14"></select>
                 <label for="I15">15. Other conditions of employment (e.g., shift or seasonal work, medical exam, etc.)</label>
                 <textarea id="I15" name="I15" rows="15" columns="15"></textarea>
-                <label>16. Reemployment priority list cleared</label>
-                <label for="yes">
-                    <input type="checkbox" id="yes" name="15. Reemployment priority list cleared">Yes
-                </label>
-                <label for="no">
-                    <input type="checkbox" id="no" name="15. Reemployment priority list cleared">No
-                </label>
-                <label>17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.</label>
-                <label for="none">
-                    <input type="checkbox" id="none" name="17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.">None
-                </label>
-                <label for="1to5">
-                    <input type="checkbox" id="1to5" name="17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.">1 to 5
-                </label>
-                <label for="6to10">
-                    <input type="checkbox" id="6to10" name="17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.">6 to 10
-                </label>
-                <label for="11more">
-                    <input type="checkbox" id="6to10" name="17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.">11+
-                </label>
+                <label for="I16">16. Reemployment priority list cleared</label>
+                <select id="I16" name="I16"></select>
+                <label for="I17">17. Indicate maximum number of nights per month the appointee will be required to be away from home in a travel status.</label>
+                <select id="I17" name="I17"></select>
                 <label for="I18">18.  Date position(s) needs to be filled (mm/dd/yyyy) </label>
                 <input type="date" id="I18" name="I18">
-                <label>19. Work Schedule</label>
-                <label for="pt">
-                    <input type="checkbox" id="pt" name="19. Work Schedule">Part Time
-                </label>
-                <label for="ft">
-                    <input type="checkbox" id="ft" name="19. Work Schedule">Full Time
-                </label>
-                <label for="int">
-                    <input type="checkbox" id="int" name="19. Work Schedule">Intermittent
-                </label>
+                <label for="I19">19. Work Schedule</label>
+                <select id="I19" name="I19"></select>
                 <label for="I20">20.  Remarks.  Provide any special qualification requirements (e.g., selective factors).</label>
                 <textarea id="I20" name="I9" rows="5" columns="15"></textarea>
                 <label for="I21">21.  Address where Certificate of Eligibles is to be sent:</label>
@@ -105,16 +71,14 @@
             </fieldset>
             <fieldset>
                 <legend>II. CERTIFICATION of ELIGIBLES  (To Be Completed by DE Office)</legend>
-                <label>Delegated examining office:</label>  
-                <label for="certattached">
-                    <input type="checkbox" id="certattached" name="certattached">The attached Certificate of Eligibles is provided in response to the above request. 
-                </label>
-                <label for="certvalid">
-                    <input type="checkbox" id="certvalid" name="certvalid">This Certificate of Eligibles is valid only for the position(s), grade(s), and duty location(s) shown above.
-                </label>
-                <label for="certreturned">
-                    <input type="checkbox" id="certreturned" name="certreturned">This Certificate of Eligibles must be returned by <input type="date" id="certreturndate" name="certreturndate">according to agency policy. 
-                </label>
+                <label>Delegated examining office:</label> 
+                <label for="II1">The attached Certificate of Eligibles is provided in response to the above request. </label>
+                <select id="II1" name="II1"></select>
+                <label for="II2">This Certificate of Eligibles is valid only for the position(s), grade(s), and duty location(s) shown above.</label>
+                <select id="II2" name="II2"></select>
+                <label for="II3">16. Reemployment priority list cleared</label>
+                <select id="II3" name="II3"></select>
+                <p>Eligibles must be returned by <input type="date" id="certreturndate" name="certreturndate">according to agency policy.</p> 
                 <label for="sf39contact">For information concerning this Certificate of Eligibles contact:</label>
                 <input type="text" id="sf39contact" name="sf39contact">
             </fieldset>
@@ -128,6 +92,7 @@
                 <label for="IIId">Date signed (mm/dd/yyyy)</label>
                 <input type="date" id="IIId"" name="IIId">
             </fieldset>
+            <input type="submit" value="Submit">
         </form>
 </body>
 </html>
